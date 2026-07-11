@@ -1,9 +1,9 @@
 :root {
-  --bg: #fbfaf7;
-  --blue: #3046ee;
-  --ink: #101116;
-  --line: #e2e5ef;
-  --muted: #5f6678;
+  --bg: #f4f1ea;
+  --blue: #14645f;
+  --ink: #17322f;
+  --line: #d8ddd8;
+  --muted: #626b68;
   --shadow: 0 34px 100px rgba(24, 35, 80, 0.14);
   --soft-shadow: 0 18px 42px rgba(20, 30, 78, 0.08);
   color: var(--ink);

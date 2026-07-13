@@ -80,8 +80,8 @@ const productScreenCopy: Record<Locale, Omit<ScreenCard, 'image'>[]> = {
   },
   {
     eyebrow: 'Monetization',
-    title: 'Subscription-ready Plus flow',
-    body: 'RevenueCat-powered subscription access with restore, refund guidance, EULA, privacy, and trial support.',
+    title: 'Live Plus subscription flow',
+    body: 'RevenueCat-powered access with purchase restore, promotional entitlements, refund guidance, EULA, privacy, and trial support.',
   },
   {
     eyebrow: 'Sharing',
@@ -96,7 +96,7 @@ const productScreenCopy: Record<Locale, Omit<ScreenCard, 'image'>[]> = {
     { eyebrow: 'Egzersiz', title: 'GPS destekli seanslar', body: 'Mesafe, süre, pati adımı, hava durumu ve hızlı başlangıç ile yürüyüş, koşu ve bisiklet takibi.' },
     { eyebrow: 'İçgörüler', title: 'İlerleme ve eğilimler', body: 'Uzun vadeli motivasyon için geçmiş görünümleri, haftalık özetler, seriler ve kişisel rekorlar.' },
     { eyebrow: 'Eğitim', title: 'Yapılandırılmış komut planları', body: 'Düzenli pratik için komut kütüphanesi, plan ilerlemesi, zorluk etiketleri ve tamamlanma durumları.' },
-    { eyebrow: 'Gelir Modeli', title: 'Aboneliğe hazır Plus akışı', body: 'RevenueCat destekli erişim; satın alımı geri yükleme, iade yönlendirmesi, EULA, gizlilik ve deneme süreci desteği.' },
+    { eyebrow: 'Gelir Modeli', title: 'Canlı Plus abonelik akışı', body: 'RevenueCat destekli erişim; satın alımı geri yükleme, promosyon yetkileri, iade yönlendirmesi, EULA, gizlilik ve deneme süreci desteği.' },
     { eyebrow: 'Paylaşım', title: 'Paylaşılabilir aktivite özetleri', body: 'Yürüyüş verilerini sosyal medyada veya fotoğraf arşivinde paylaşılabilir özetlere dönüştüren sahip odaklı tasarım.' },
   ],
 }
@@ -111,10 +111,25 @@ const evidenceCardCopy: Record<Locale, Omit<EvidenceCard, 'image' | 'wide'>[]> =
     title: 'App Store Connect release state',
     body: 'App Store Connect confirms version 1.0.1 as ready for distribution after review completion and post-launch update preparation.',
   },
+  {
+    title: 'Iterative TestFlight builds',
+    body: 'The TestFlight build history records repeated beta uploads across the launch and post-launch cycle, including the completed 1.0.1 build.',
+  },
+  {
+    title: 'Internal build validation',
+    body: 'The internal TestFlight group records 14 builds used for rapid checks across the product cycle, showing the iteration history behind the current release.',
+  },
+  {
+    title: 'External beta testing',
+    body: 'A redacted TestFlight summary documents 14 external testers. Its three listed builds are the current curated set; older external builds were removed as testing advanced.',
+  },
   ],
   tr: [
     { title: 'Canlı App Store sayfası', body: 'Yayınlanan ürün; 1.0.1 sürüm notları, kategori bilgileri, önizlemeler ve geliştirici kimliğiyle App Store’da herkese açık.' },
     { title: 'App Store Connect dağıtım durumu', body: 'App Store Connect, inceleme tamamlandıktan ve yayın sonrası güncelleme hazırlandıktan sonra 1.0.1 sürümünün dağıtıma hazır olduğunu doğruluyor.' },
+    { title: 'Yinelenen TestFlight build’leri', body: 'TestFlight build geçmişi, yayın ve yayın sonrası döngü boyunca tekrarlanan beta yüklemelerini ve tamamlanan 1.0.1 build’ini belgeliyor.' },
+    { title: 'Dahili build doğrulaması', body: 'Dahili TestFlight grubu, ürün döngüsü boyunca hızlı kontrollerde kullanılan 14 build’i ve güncel sürümün arkasındaki iterasyon geçmişini belgeliyor.' },
+    { title: 'Harici beta testi', body: 'Kişisel bilgilerden arındırılmış TestFlight özeti 14 harici test kullanıcısını belgeliyor. Buradaki üç build güncel seçkiyi gösteriyor; eski harici build’ler test ilerledikçe kaldırıldı.' },
   ],
 }
 
@@ -162,12 +177,12 @@ const ui = {
     phaidTitle: 'PHAID', phaidProblem: 'A social-good concept designed to make professional health and mental-health support easier to reach for people who need free assistance.', phaidApproach: 'The work explored patient, volunteer, and donation journeys through research, personas, information architecture, wireframes, usability testing, and high-fidelity prototypes.',
     nav: ['Work', 'Screens', 'Validation', 'About', 'Resume', 'Contact'],
     heroEyebrow: 'Product Designer · Mobile UX · Engineering & QA', heroTitle: 'I brought pawtrck from product idea to the App Store.', heroLede: 'A live iOS product shaped through research, product strategy, mobile UX, rigorous QA, and AI-assisted implementation.', viewCase: 'View case study', appStore: 'App Store', website: 'pawtrck website',
-    stats: [['Live', 'on the App Store'], ['1.0.1', 'post-launch release'], ['5', 'core care areas'], ['Plus', 'subscription ready']],
+    stats: [['Live', 'on the App Store'], ['1.0.1', 'post-launch release'], ['5', 'core care areas'], ['Plus', 'live subscription']],
     caseEyebrow: 'Featured Product Experience', caseTitle: 'pawtrck - an iOS dog care companion', caseIntro: 'A shipped product case study spanning strategy, mobile UX/UI, subscriptions, App Review readiness, launch, and post-release improvement.', role: 'Role', roleTitle: 'Independent Product Designer & Product Builder', roleBody: 'I led product decisions, experience design, QA, subscription setup, reviewer-facing details, and the path from early concept to a shipped iOS product.', value: 'Product Value', valueTitle: 'Everything your dog needs, organized in one place.', valueBody: 'pawtrck brings diet, activity, health, training, medication reminders, vet visits, and exportable records into one owner-friendly system.', scope: 'Launch Scope', scopeItems: ['Live iOS app with App Store metadata and release notes', 'pawtrck Plus subscription, trial, legal links, and purchase recovery', 'Post-launch 1.0.1 update for reminders and symptom icon consistency'],
     screensEyebrow: 'Real Product Screens', screensTitle: 'Core workflows from the shipped app', screensIntro: 'Actual screens from the live product, grouped around the owner workflows they support.',
     processEyebrow: 'Process', processTitle: 'How I moved from product idea to launch', processIntro: 'Beyond interface design, the work covered product definition, implementation coordination, edge-case testing, subscriptions, and App Review feedback.',
-    walkthroughEyebrow: 'Product Tour', walkthroughTitle: 'Explore the live app', walkthroughBody: 'A direct walkthrough of the shipped iOS experience, its navigation, and core care flows.', walkthroughNote: 'Recorded in the live iOS app', marketingEyebrow: 'Campaign Creative', marketingTitle: 'A launch film built for product marketing', marketingBody: 'A short, brand-led video created to introduce pawtrck through social and launch communications.', marketingNote: '22-second marketing film',
-    validationEyebrow: 'Release Validation', validationTitle: 'Public release, independently verifiable', validationBody: 'The public App Store listing and App Store Connect distribution state document that pawtrck passed review and shipped. Product workflows are presented separately above.', openListing: 'Open App Store listing', viewPdf: 'View vet export PDF',
+    walkthroughEyebrow: 'Product Tour', walkthroughTitle: 'Explore the live app', walkthroughBody: 'A direct walkthrough of the shipped iOS experience, its navigation, and core care flows.', walkthroughNote: 'Recorded in the live iOS app', marketingEyebrow: 'Campaign Creative', marketingTitle: 'Short-form films for product marketing', marketingBody: 'Two brand-led videos created for social media and launch communications, each presenting pawtrck through a different campaign edit.', marketingNote: 'Two campaign films · 22 sec + 19 sec', campaignOne: 'Launch film', campaignTwo: 'Social campaign edit',
+    validationEyebrow: 'Release Validation', validationTitle: 'Release proof across public and operational records', validationBody: 'The public App Store listing verifies the live product. App Store Connect and TestFlight document review completion, release state, and iterative beta builds.', openListing: 'Open App Store listing', viewPdf: 'View vet export PDF',
     aboutEyebrow: 'About', aboutTitle: 'Engineering discipline, applied to product work.', aboutLede: 'My background in astronautical engineering and quality assurance shapes a structured approach to product work: define the problem clearly, understand constraints, test carefully, and improve through evidence.', aboutBody: 'Completing the Google UX Design Professional Certificate strengthened my practice in user research, prototyping, and usability testing. I combine that foundation with analytical thinking and AI-assisted workflows to turn product decisions into working software.',
     skills: ['Product strategy', 'Mobile UX/UI', 'User flows', 'QA testing', 'App Store launch', 'Subscription workflows', 'AI-assisted execution', 'Product documentation'], resumeEyebrow: 'Resume', resumeTitle: 'Experience, education, and product work in one place.', resumeBody: 'View or download the English resume and Turkish CV.', resumeEn: 'Resume - English', resumeTr: 'Özgeçmiş - Türkçe',
     contactEyebrow: 'Contact', contactTitle: "Let's build thoughtful products that ship.", contactBody: "I'm seeking product design roles where I can combine mobile UX, analytical thinking, QA discipline, and hands-on product ownership.", linkedIn: 'LinkedIn',
@@ -178,12 +193,12 @@ const ui = {
     phaidTitle: 'PHAID', phaidProblem: 'Ücretsiz desteğe ihtiyaç duyan kişilerin profesyonel sağlık ve ruh sağlığı hizmetlerine daha kolay ulaşmasını amaçlayan sosyal fayda konsepti.', phaidApproach: 'Hasta, gönüllü ve bağışçı yolculuklarını araştırma, persona, bilgi mimarisi, wireframe, kullanılabilirlik testi ve yüksek detaylı prototiplerle ele aldım.',
     nav: ['Çalışma', 'Ekranlar', 'Doğrulama', 'Hakkımda', 'Özgeçmiş', 'İletişim'],
     heroEyebrow: 'Ürün Tasarımcısı · Mobil UX · Mühendislik ve QA', heroTitle: "pawtrck'i ürün fikrinden App Store'a taşıdım.", heroLede: 'Araştırma, ürün stratejisi, mobil UX, titiz QA ve yapay zeka destekli uygulama süreçleriyle şekillenen canlı bir iOS ürünü.', viewCase: 'Vaka çalışmasını incele', appStore: 'App Store', website: 'pawtrck web sitesi',
-    stats: [['Yayında', "App Store'da"], ['1.0.1', 'yayın sonrası sürüm'], ['5', 'temel bakım alanı'], ['Plus', 'aboneliğe hazır']],
+    stats: [['Yayında', "App Store'da"], ['1.0.1', 'yayın sonrası sürüm'], ['5', 'temel bakım alanı'], ['Plus', 'canlı abonelik']],
     caseEyebrow: 'Öne Çıkan Ürün Deneyimi', caseTitle: 'pawtrck - iOS köpek bakım asistanı', caseIntro: 'Strateji, mobil UX/UI, abonelikler, App Review hazırlığı, yayın ve yayın sonrası geliştirmeyi kapsayan gerçek bir ürün vaka çalışması.', role: 'Rol', roleTitle: 'Bağımsız Ürün Tasarımcısı ve Ürün Geliştirici', roleBody: 'Ürün kararlarını, deneyim tasarımını, QA sürecini, abonelik kurulumunu, inceleme detaylarını ve erken fikirden yayınlanmış iOS ürününe uzanan yolu yönettim.', value: 'Ürün Değeri', valueTitle: 'Köpeğinizin ihtiyaç duyduğu her şey tek yerde.', valueBody: 'pawtrck; beslenme, aktivite, sağlık, eğitim, ilaç hatırlatmaları, veteriner ziyaretleri ve dışa aktarılabilir kayıtları sahip odaklı tek bir sistemde buluşturuyor.', scope: 'Yayın Kapsamı', scopeItems: ['App Store bilgileri ve sürüm notlarıyla canlı iOS uygulaması', 'pawtrck Plus aboneliği, deneme süreci, yasal bağlantılar ve satın alımı geri yükleme', 'Hatırlatıcılar ve semptom ikon tutarlılığı için yayın sonrası 1.0.1 güncellemesi'],
     screensEyebrow: 'Gerçek Ürün Ekranları', screensTitle: 'Yayınlanmış uygulamanın temel akışları', screensIntro: 'Canlı üründen alınan gerçek ekranlar, destekledikleri sahip iş akışlarına göre gruplandırıldı.',
     processEyebrow: 'Süreç', processTitle: 'Ürün fikrinden yayına nasıl ilerledim', processIntro: 'Arayüz tasarımının ötesinde çalışma; ürün tanımı, uygulama koordinasyonu, uç durum testleri, abonelikler ve App Review geri bildirimlerini kapsadı.',
-    walkthroughEyebrow: 'Ürün Turu', walkthroughTitle: 'Canlı uygulamayı keşfedin', walkthroughBody: "Yayınlanmış iOS deneyiminde, navigasyonda ve temel bakım akışlarında doğrudan bir gezinti.", walkthroughNote: 'Canlı iOS uygulamasında kaydedildi', marketingEyebrow: 'Kampanya İçeriği', marketingTitle: 'Ürün pazarlaması için hazırlanan yayın filmi', marketingBody: "pawtrck'i sosyal medya ve yayın iletişimlerinde tanıtmak için hazırlanmış kısa, marka odaklı video.", marketingNote: '22 saniyelik tanıtım filmi',
-    validationEyebrow: 'Yayın Doğrulaması', validationTitle: 'Herkese açık ve bağımsız olarak doğrulanabilir', validationBody: "App Store'daki herkese açık sayfa ve App Store Connect dağıtım durumu, pawtrck'in incelemeyi geçip yayınlandığını belgeliyor. Ürün akışları yukarıda ayrı olarak sunuluyor.", openListing: 'App Store sayfasını aç', viewPdf: 'Veteriner PDF çıktısını görüntüle',
+    walkthroughEyebrow: 'Ürün Turu', walkthroughTitle: 'Canlı uygulamayı keşfedin', walkthroughBody: "Yayınlanmış iOS deneyiminde, navigasyonda ve temel bakım akışlarında doğrudan bir gezinti.", walkthroughNote: 'Canlı iOS uygulamasında kaydedildi', marketingEyebrow: 'Kampanya İçeriği', marketingTitle: 'Ürün pazarlaması için kısa filmler', marketingBody: "pawtrck'i sosyal medya ve yayın iletişimlerinde iki farklı kampanya kurgusuyla tanıtan, marka odaklı kısa videolar.", marketingNote: 'İki kampanya filmi · 22 sn + 19 sn', campaignOne: 'Yayın filmi', campaignTwo: 'Sosyal medya kurgusu',
+    validationEyebrow: 'Yayın Doğrulaması', validationTitle: 'Herkese açık ve operasyonel kayıtlarla yayın kanıtı', validationBody: "App Store sayfası canlı ürünü herkese açık biçimde doğruluyor. App Store Connect ve TestFlight ise inceleme, dağıtım ve yinelenen beta build sürecini belgeliyor.", openListing: 'App Store sayfasını aç', viewPdf: 'Veteriner PDF çıktısını görüntüle',
     aboutEyebrow: 'Hakkımda', aboutTitle: 'Ürün çalışmalarına uygulanan mühendislik disiplini.', aboutLede: 'Uzay mühendisliği ve kalite güvence geçmişim ürün çalışmalarına yapılandırılmış yaklaşımımı şekillendiriyor: problemi net tanımlamak, kısıtları anlamak, dikkatle test etmek ve kanıta göre geliştirmek.', aboutBody: 'Google UX Design Professional Certificate programını başarıyla tamamlamam; kullanıcı araştırması, prototipleme ve kullanılabilirlik testleri pratiğimi güçlendirdi. Bu temeli analitik düşünme ve yapay zeka destekli iş akışlarıyla birleştirerek ürün kararlarını çalışan yazılıma dönüştürüyorum.',
     skills: ['Ürün stratejisi', 'Mobil UX/UI', 'Kullanıcı akışları', 'QA testleri', 'App Store yayını', 'Abonelik akışları', 'Yapay zeka destekli uygulama', 'Ürün dokümantasyonu'], resumeEyebrow: 'Özgeçmiş', resumeTitle: 'Deneyim, eğitim ve ürün çalışmalarım tek yerde.', resumeBody: 'İngilizce ve Türkçe özgeçmişleri görüntüleyebilir veya indirebilirsiniz.', resumeEn: 'Resume - English', resumeTr: 'Özgeçmiş - Türkçe',
     contactEyebrow: 'İletişim', contactTitle: 'Yayınlanan, düşünülmüş ürünler geliştirelim.', contactBody: 'Mobil UX, analitik düşünme, QA disiplini ve uçtan uca ürün sahipliğini birleştirebileceğim ürün tasarımı rollerine açığım.', linkedIn: 'LinkedIn',
@@ -192,6 +207,9 @@ const ui = {
 
 function Header({ locale, onLocaleChange }: { locale: Locale; onLocaleChange: (locale: Locale) => void }) {
   const t = ui[locale]
+  const [menuOpen, setMenuOpen] = useState(false)
+  const closeMenu = () => setMenuOpen(false)
+
   return (
     <header className="site-header">
       <a className="brand-lockup" href="#top" aria-label="Karahan Karatas home">
@@ -211,6 +229,25 @@ function Header({ locale, onLocaleChange }: { locale: Locale; onLocaleChange: (l
           <button className={locale === 'en' ? 'active' : ''} type="button" onClick={() => onLocaleChange('en')} aria-pressed={locale === 'en'}>EN</button>
           <button className={locale === 'tr' ? 'active' : ''} type="button" onClick={() => onLocaleChange('tr')} aria-pressed={locale === 'tr'}>TR</button>
         </div>
+        <button
+          className="mobile-menu-button"
+          type="button"
+          aria-label={locale === 'en' ? 'Open navigation' : 'Navigasyonu aç'}
+          aria-expanded={menuOpen}
+          onClick={() => setMenuOpen((open) => !open)}
+        >
+          <span />
+          <span />
+          <span />
+        </button>
+      </div>
+      <div className={`mobile-nav-panel ${menuOpen ? 'open' : ''}`}>
+        <a href="#work" onClick={closeMenu}>{t.nav[0]}</a>
+        <a href="#screens" onClick={closeMenu}>{t.nav[1]}</a>
+        <a href="#evidence" onClick={closeMenu}>{t.nav[2]}</a>
+        <a href="#about" onClick={closeMenu}>{t.nav[3]}</a>
+        <a href="#resume" onClick={closeMenu}>{t.nav[4]}</a>
+        <a href="#contact" onClick={closeMenu}>{t.nav[5]}</a>
       </div>
     </header>
   )
@@ -265,7 +302,8 @@ function App() {
   })
   const t = ui[locale]
   const productScreens = productScreenCopy[locale].map((card, index) => ({ ...card, image: asset(screenImages[index]) }))
-  const evidenceCards: EvidenceCard[] = evidenceCardCopy[locale].map((card, index) => ({ ...card, image: asset(index === 0 ? 'evidence-app-store.png' : 'evidence-app-connect.png'), wide: true }))
+  const evidenceImages = ['evidence-app-store.png', 'evidence-app-connect.png', 'evidence-testflight-builds.png', 'evidence-internal-testers.png', 'evidence-beta-testers.png']
+  const evidenceCards: EvidenceCard[] = evidenceCardCopy[locale].map((card, index) => ({ ...card, image: asset(evidenceImages[index]), wide: true }))
   const processSteps = processCopy[locale]
 
   useEffect(() => {
@@ -376,11 +414,23 @@ function App() {
 
         <section className="marketing-section section-pad">
           <div className="marketing-media">
-            <div className="marketing-video-shell">
-              <video controls playsInline preload="metadata">
-                <source src={asset('pawtrck-walkthrough.mp4')} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+            <div className="campaign-video">
+              <div className="marketing-video-shell">
+                <video controls playsInline preload="metadata">
+                  <source src={asset('pawtrck-walkthrough.mp4')} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <span>{t.campaignOne}</span>
+            </div>
+            <div className="campaign-video campaign-video-offset">
+              <div className="marketing-video-shell">
+                <video controls playsInline preload="metadata">
+                  <source src={asset('pawtrck-social-campaign.mp4')} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <span>{t.campaignTwo}</span>
             </div>
           </div>
           <div className="marketing-copy">
@@ -414,11 +464,19 @@ function App() {
           </div>
           <div className="archive-projects">
             <article className="archive-project">
-              <div className="archive-visual readyrecipes-visual" aria-label="ReadyRecipes web and mobile screens">
-                <img className="readyrecipes-web" src={asset('readyrecipes-web-home.png')} alt="ReadyRecipes responsive website home page" loading="lazy" />
-                <div className="archive-phones readyrecipes-phones">
-                  {['readyrecipes-home.avif', 'readyrecipes-recipes.avif', 'readyrecipes-menu.avif'].map((image) => (
-                    <img src={asset(image)} alt="ReadyRecipes mobile app screen" loading="lazy" key={image} />
+              <div className="archive-visual device-showcase" aria-label="ReadyRecipes web and mobile screens">
+                <div className="desktop-mockup" aria-label="ReadyRecipes desktop website preview">
+                  <div className="desktop-screen">
+                    <img src={asset('readyrecipes-web-home.png')} alt="ReadyRecipes responsive website home page" loading="lazy" />
+                  </div>
+                  <span className="desktop-neck" aria-hidden="true" />
+                  <span className="desktop-base" aria-hidden="true" />
+                </div>
+                <div className="archive-phones showcase-phones">
+                  {['readyrecipes-phone-home.png', 'readyrecipes-phone-recipe.png'].map((image) => (
+                    <div className="phone-mockup" key={image}>
+                      <img src={asset(image)} alt="ReadyRecipes mobile app screen" loading="lazy" />
+                    </div>
                   ))}
                 </div>
               </div>
@@ -434,10 +492,21 @@ function App() {
               </div>
             </article>
             <article className="archive-project">
-              <div className="archive-visual archive-phones archive-phones-two" aria-label="PHAID mobile app screens">
-                {['phaid-login.avif', 'phaid-home.avif'].map((image) => (
-                  <img src={asset(image)} alt="PHAID mobile app screen" loading="lazy" key={image} />
-                ))}
+              <div className="archive-visual device-showcase" aria-label="PHAID web and mobile screens">
+                <div className="desktop-mockup" aria-label="PHAID desktop website preview">
+                  <div className="desktop-screen">
+                    <img src={asset('phaid-web-home.png')} alt="PHAID responsive website home page" loading="lazy" />
+                  </div>
+                  <span className="desktop-neck" aria-hidden="true" />
+                  <span className="desktop-base" aria-hidden="true" />
+                </div>
+                <div className="archive-phones showcase-phones">
+                  {['phaid-phone-login.png', 'phaid-phone-home.png'].map((image) => (
+                    <div className="phone-mockup" key={image}>
+                      <img src={asset(image)} alt="PHAID mobile app screen" loading="lazy" />
+                    </div>
+                  ))}
+                </div>
               </div>
               <div className="archive-copy">
                 <div className="archive-meta"><span>{t.archiveRole}</span><span>{t.archiveScope}</span></div>
